@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebService>
+    <!-- 영역별 사용할 로거를 설정한다. -->
+    <LoggerList>
+        <Logger name='bkrlogger' level='info' path='d:/logs' prefix='broker' console='true' />
+        <Logger name='svrlogger' level='info' path='d:/logs' prefix='server' console='true' />
+        <Logger name='iologger' level='info' path='d:/logs' prefix='inout' console='true' />
+    </LoggerList>
+    <!--
+         클라이언트 요청을 처리한 서버 목록을 설정한다. 
+         WAS 단독서버이므로 한개만 embededHost만 지적한다. 
+    -->
+    <ServiceList logger='bkrlogger'>
+        <EmbededHost name='YGS' />
+    </ServiceList>
+    <!-- 
+         WAS내장형 GEOMEX 서버구동을 설정한다. 
+         GEOMEX 서버 내부적으로 사용하는 DBNode(DBPool) 환경을 설정한다. 
+    -->
+    <Server enable='true' logger='svrlogger'>
+        <DataSource>            
+            <!--  산림자원관리 관리(레이어정보,사용자관리,로그 등 노드 -->
+            <JDBCNode>
+                <NodeName>YGS</NodeName>
+                <Driver>org.postgresql.Driver</Driver>
+                <Url><![CDATA[jdbc:postgresql://127.0.0.1:1990/YGSDB]]></Url>
+                <User>postgres</User>
+                <Passwd>daeho1990!</Passwd>
+                <Encoding>utf-8</Encoding>
+                <CheckQuery><![CDATA[select 1]]></CheckQuery>
+                <!-- <MinCapacity>10</MinCapacity>
+                <MaxCapacity>40</MaxCapacity> -->
+                <MinCapacity>5</MinCapacity>
+                <MaxCapacity>10</MaxCapacity>
+                <WaitTimeout>1</WaitTimeout> <!-- 초 -->
+                <CheckTimeout>55</CheckTimeout><!-- 초 -->
+            </JDBCNode>
+        </DataSource>
+        <!-- 데이터 IO시 압축정도, 압축여부, IO버퍼사이즈, BufferPool갯수 등을 설정한다. -->
+        <InputOutput logger='iologger'>
+            <GMXPrecision>10</GMXPrecision>
+            <OutputMode>compress</OutputMode>
+            <BufferSize>128000</BufferSize>
+            <CorePoolSize>10</CorePoolSize>
+        </InputOutput>
+        <!-- Client에서 요청한 각 요청별로 처리 Handler를 지정한다. -->
+        <HandlerList>
+            <Handler name="extent" node="YGS" className="geovlet.service.pgsql.PgSQLExtent" />
+            <Handler name="select" node="YGS" className="geovlet.service.pgsql.PgSQLSelect" />
+            <Handler name="insert" node="YGS" className="geovlet.service.pgsql.PgSQLInsert" />
+            <Handler name="update" node="YGS" className="geovlet.service.pgsql.PgSQLUpdate" />
+            <Handler name="delete" node="YGS" className="geovlet.service.pgsql.PgSQLDelete" />
+            <Handler name="execute" node="YGS" className="geovlet.service.pgsql.PgSQLExecute" />
+            <Handler name="transaction" node="YGS" className="geovlet.service.pgsql.PgSQLTransaction" />
+        </HandlerList>
+    </Server>
+</WebService>

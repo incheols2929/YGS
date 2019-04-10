@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JDBCPoolDefinition>
+	<LoggerList>
+		<Logger name='dbpool' level='info' path='d:/logs' prefix='db' console='true' />
+	</LoggerList>
+    <JDBCPool>
+        <NodeName>YGS</NodeName>
+        <Driver>org.postgresql.Driver</Driver>
+        <Url><![CDATA[jdbc:postgresql://127.0.0.1:1990/YGSDB]]></Url>
+        <User>postgres</User>
+        <Passwd>daeho1990!</Passwd>
+        <Encoding>utf-8</Encoding>
+        <CheckQuery><![CDATA[select 1]]></CheckQuery>
+        <MinCapacity>5</MinCapacity>
+        <MaxCapacity>10</MaxCapacity>
+        <!-- <MinCapacity>2</MinCapacity>
+        <MaxCapacity>5</MaxCapacity> -->
+        <WaitTimeout>1</WaitTimeout> <!-- 초 -->
+        <CheckTimeout>55</CheckTimeout><!-- 초 -->
+        <LoggerName>dbpool</LoggerName>
+    </JDBCPool>    
+</JDBCPoolDefinition>

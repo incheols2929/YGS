@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'NanumGothic';
+    /*src: url('http://commondatastorage.googleapis.com/fontfacekr-fonts/NanumGothic.eot');*/
+    src: url('http://127.0.0.1:8080/gws/intra/css/webfont/NanumGothic.eot');
+}

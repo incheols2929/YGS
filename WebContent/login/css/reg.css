@@ -1,0 +1,119 @@
+@font-face{
+	font-family: "NanumGothic";
+	src: url('/css/NanumBarunGothic.eot');
+	src: local(※), url('/css/NanumBarunGothic.woff') format('woff');
+}
+
+html, body{
+	margin:0; padding:0; color:#FFF; font-size:10px;
+	font-family:'나눔고딕',NanumGothic,nanumgothicweb,'돋움',dotum,Helvetica,sans-serif;
+}
+
+#wrapParent {
+	background-image: url("/login/img/reg/background.png");
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: auto;
+}
+
+#wrapParent #wrap {
+	margin:0 auto;
+	width: 464px;
+	height: 640px;
+	min-height: 640px;
+}
+
+#wrapParent #content {
+	width: 464px;
+	height: 640px;
+	min-height: 640px;
+	text-align: left;
+}
+
+#wrapParent #content table {
+	background-color: white;
+	border: 1px solid #C2C5CC;
+	margin-top: 10px;
+	width: 100%;
+}
+
+#content th {
+	color: gray;
+	font-size: 12px;
+	width: 120px;
+	width: 110px \0/IE8;
+	height: 55px;
+}
+
+#content th .textImg {
+	margin-left: 15px;
+	margin-left: 5px \0/IE8;
+}
+
+#content td {
+	height: 55px;
+}
+
+#content input {
+	margin: 0;
+	border: 1px solid #C2C5CC;
+	width: 200px;
+	height: 28px;
+	line-height: 28px;
+}
+
+#content .wide {
+	width: 265px !important;
+}
+
+#content select {
+	margin: 0;
+	border: 1px solid #C2C5CC;
+	width: 200px;
+	height: 28px;
+	text-align: center;
+}
+
+#content #dept_btn {
+	width: 60px;
+	height: 32px;
+	border: 0;
+	vertical-align: bottom;
+	background-image: url("/login/img/reg/form2_btn.png");
+}
+
+#btnWrap {
+	margin-top: 10px;
+}
+
+#wrapParent button {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#wrapParent #backBtn {
+	background-image: url("/login/img/reg/btn_reset.png");
+	width: 100px;
+	height: 62px;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapParent #okBtn {
+	width: 364px;
+	height: 62px;
+	margin-left: -3px;
+	padding: 0;
+}
+
+.chkImg {
+    margin-left: 10px;
+    vertical-align: sub;
+    display: none;
+}
+
+.chkImg#chkImgDept {
+	margin-left: 13px;
+}

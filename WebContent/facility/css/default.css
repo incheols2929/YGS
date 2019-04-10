@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: normal; font-size: 12px; vertical-align: baseline; word-wrap:break-word; }
+html { line-height: 1 }
+html, body { color: #4F4F4F; text-align: center; }
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body { padding: 0; margin: 0; font-family: 'Malgun Gothic', Arial, sans-serif; color: #424242; -webkit-font-smoothing: antialiased; }
+input, textarea, select, button { font-family: 'Malgun Gothic', Arial, sans-serif; font-size: 12px; }
+input, textarea { border-radius: 0; outline: none; resize: none }
+a { text-decoration: none; }
+select, button, a span, button span { cursor:pointer; }
+table { border-collapse: collapse; border-spacing: 0 }
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle }
+ul, ol { list-style: none; }
+ul, ol, dl, li, dt, dd, a, button, span, p, strong, b { display: inline-block; }
+input:focus { background: #FF6; }

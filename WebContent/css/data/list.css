@@ -1,0 +1,299 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("../page_nav.css");
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #173c8e;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+table a:active,
+table a:hover {
+	color: #173c8e;
+	text-decoration:underline;
+}
+table {
+	color: #666666;
+	font-size: 9pt;
+	background: #eaebec;
+	border: #e3e3e3 1px solid;
+
+}
+table th {
+	color: #ffffff;
+	size: 9pt;
+	padding:3px 5px 3px 5px;
+	border-right : 1px dotted #dedede;
+	border-bottom : 1px dotted #dedede;
+	background-color: #32b69f;
+	
+}
+table tr:first-child th:first-child{
+}
+table tr:first-child th:last-child{
+}
+table tr td {
+	text-align: center;
+	padding: 1px 5px 1px 5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	
+}
+table tr.even td{
+	background: #f6f6f6;
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+}
+table tr:last-child td:last-child{
+}
+
+#search tbody th {
+	width: 70px;
+}
+
+#search tbody th label {
+	color: #ffffff;
+	size: 9pt;
+}
+
+#search tbody td div {
+	width: 100%;
+}
+
+#search tbody td input {
+	width: 100%;
+}
+
+#search tbody td select {
+	width: 100%;
+}
+
+#search_item {
+	overflow-y: auto;
+}
+
+#btn_del {
+	display: none;
+}
+
+#btn_add {
+}
+
+#btn_xls {
+}
+
+#btn_lwin {
+	margin-left: 10px !important;
+}
+
+#data_view table tr:hover td{
+	background: #eeeeee;
+}
+
+#data_view .over_bg td {
+	background: #f2f2f2 !important;
+}
+
+
+#l_menu {
+}
+
+#search {
+	position: relative;
+	margin: 0px 10px 10px 10px;
+}
+
+#search #sc_keyword {
+	width: 200px;
+}
+
+
+
+#r_content {
+	position: absolute;
+/*	border-left: solid 2px #cccccc; */
+}
+
+#menu_bar {
+	position: relative;
+	padding: 10px;
+	height: 20px;
+	text-align: right;
+}
+
+#rownum_info_o {
+	position: absolute;
+	width: 100px;
+	left: 10px;
+	text-align: left;
+}
+
+
+#msg_view {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#msg_wrap {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+}
+
+#msg_load {
+	width: 100px;
+	margin: auto;
+	padding: 20px 40px;
+	text-align: center;
+	font: bold 10pt Arail;
+	background-color: #ffefef;
+	border: solid 1px #993333; 
+	color: #df3333;
+	opacity: 0.7;
+	filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#data_view {
+	position: relative;
+	overflow-y: auto;
+}
+
+#data_view table {
+	margin: 0;
+}
+
+#data_view table thead tr th {
+	white-space:nowrap;
+ 	background-color: #326900;
+	color: #ffffff;
+	font-weight: bold;
+	/*
+	cursor: pointer; */
+}
+
+#data_view table tbody tr {
+	cursor: pointer;
+}
+
+.data_right table thead tr th:last-of-type {
+	cursor: default !important;
+}
+
+#data_view table td {
+	height: 22px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
+
+#data_header {
+	position: relative;
+}
+
+#data_body {
+	position: relative;
+}
+
+.data_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+}
+
+.data_main {
+}
+
+.data_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+}
+
+#data_header div {
+	height: 30px;
+}
+
+#data_header .data_left {
+	overflow: hidden;
+}
+
+#data_header .data_main {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#data_header .data_right {
+	overflow: hidden;
+}
+
+
+#data_body div {
+	height: 200px;
+}
+
+#data_body div table {
+	margin-top: -30px;
+}
+
+#data_body .data_left {
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+#data_body .data_main {
+	overflow-y: scroll;
+	overflow-x: scroll;
+}
+
+#data_body .data_right {
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+button.gtposi {
+	width: 24px;
+	text-indent: -999pt !important;
+	background-image: url(../../img/ico_loc.png) !important;
+	background-repeat: no-repeat;
+}
+
+button.dtv {
+	width: 24px;
+	text-indent: -999pt !important;
+	background-image: url(../../img/ico_det.png) !important;
+	background-repeat: no-repeat;
+}
+
+
+.border3 {
+	height: 25px;
+	border-bottom: 1px solid #dedede;
+}
+
+#layernm {
+	padding-left: 10px;
+}
+
+#tl_main {
+	color: #0000ff !important;
+}

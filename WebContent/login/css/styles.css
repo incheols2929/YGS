@@ -1,0 +1,47 @@
+#enjoysch{
+	position: absolute;
+	/*cursor:pointer;*/
+	/* background:#fff; */
+	/* border:0px solid #000000; */
+	width:228px; height:440px; 
+	overflow: auto;
+	/* margin:0 0 0 5px; */
+	/*width:331px; height:550px; padding:0 5px 5px 5px; overflow: auto;*/
+	/*height:630px;*/
+}
+#enjoysch .linkbox{
+	margin:3px 0px 0px 0px;
+	/* background:#fff; */
+	width:100%;
+	/*position:relative;*/
+	/*-moz-border-radius:3px;
+	-webkit-border-radius:3px;*/
+}
+#enjoysch .linkbox h2{
+	margin:0;
+	font-size:12px;
+	padding:5px;
+	/* background:#f0f0f0; */
+	color:#000;
+	/* border-bottom:1px solid #dedddd; */
+	font-family:Verdana;
+	cursor:pointer;
+}
+
+#enjoysch .linkbox .sitename{
+	margin:0;
+	font-size:12px;
+	padding:5px;
+	/* background:#f0f0f0; */
+	color:#000;
+	/* border-bottom:1px solid #dedddd; */
+	font-family:Verdana;
+	cursor:pointer;
+	position: relative;
+}
+
+#enjoysch  .placeholder{
+	/* background: #f0f0f0;
+	border:1px dashed #4b7bd0; */
+	margin:2px 2px 2px 2px;
+}

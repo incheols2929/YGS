@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MapConfiguration>
+	<StyleDefinition>
+		<Style name='gws_index_style'>
+			<Text font='Dialog' style='0' minSize='12' maxSize='12'
+				color='255,255,0,255' haloColor='' haloSize='0.0' xoffset='0'
+				yoffset='0' align='CENTER' />
+			<Line type='ONE_LINE_SOLID' width='0.5' arrow='false' color='219,214,205,255' />
+			<Fill pattern='' color='243,241,233,0' opacity='1.0' />
+		</Style>
+	</StyleDefinition>
+	<MapDefinition>
+		<FullExtent minx='155445.94426213342' miny='297818.81427142856'
+			maxx='155892.34814303453' maxy='298068.9997074699' />
+		<InitExtent minx='155445.94426213342' miny='297818.81427142856'
+			maxx='155892.34814303453' maxy='298068.9997074699' />
+		<Scale min='500' max='14000000' />
+		<ThreadPool value='10' />
+		<DrawWithAutoRefresh value='true' />
+		<LabelCollisionLevel value='LAYER' />
+		<Connectors>
+			<BrokerConnector name='geomex'
+				url='http://127.0.0.1/GEOMEX' node='YGS' />
+		</Connectors>
+		<MapCrs epsg='5186'>
+            <MapEllipsoid a='6378137.0' f='298.257222101' name='GRS80'/>
+            <MapBase lat='38.0' lon='127.0' name='WTM127' sf='1.0'
+                xn='600000.0' ye='200000.0'/>
+        </MapCrs>
+	</MapDefinition>
+	<IndexDefinition>
+		<Index dataset='lp_adm_sgg' layerName='시군구' zIndex='1' type='6'
+			visible='true' nodeName='YGS' connector='geomex' crs='5186'>
+			<Extent pkey='_gid' heightColumn='' angleColumn=''>
+				<ExtentItem visible='false' name='_gid' alias='_gid'
+					type='LONG' />
+				<ExtentItem visible='false' name='sig_cd' alias='시군구코드'
+					type='STRING' />
+				<ExtentItem visible='false' name='_geometry' alias='geometry'
+					type='GMX' />
+			</Extent>
+			<Style default='gws_index_style' searched='' selected=''
+				themeColumn='sig_cd' theme='false' range='false'></Style>
+		</Index>
+	</IndexDefinition>
+	<LayerDefinition>
+		<LayerGroup>
+		</LayerGroup>
+	</LayerDefinition>
+</MapConfiguration>

@@ -1,0 +1,59 @@
+ .wf-active body {
+    font-family: 'NanumGothic';
+    font-size:11px;
+   }
+
+body,div,ul,li,dl,dt,dd,ol,p,h1,h2,h3,h4,h5,h6,form,table  {
+	color:#000000;
+	/**font-size:  80%;*/
+	margin:0;
+	padding:0;
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 12px;
+	
+	scrollbar-arrow-color: #464646;
+	scrollbar-3dlight-color: #CCCCCC;
+	scrollbar-darkshadow-color: #999999;
+	scrollbar-face-color: #D4D0C8;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #CCCCCC;
+	scrollbar-track-color: #e6e6e6;
+	
+	/*scrollbar-face-color:#ffffff;
+	scrollbar-shadow-color:#d5d5d5;
+	scrollbar-highlight-color:#ffffff;
+	scrollbar-3dlight-color:#d5d5d5;
+	scrollbar-darkshadow-color:#ffffff;
+	scrollbar-track-color:#ffffff;
+	scrollbar-arrow-color:#a5a5a5;*/
+}
+img{
+	border:0;
+}
+
+
+A:link {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;  color: #333333; text-decoration: none;}
+A:visited {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt; color: #333333; text-decoration: none;}
+A:active {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt; color: #2270bf; text-decoration: none;}
+A:hover {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;  color: #2270bf; text-decoration: none;}
+
+
+input, select{
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;
+}
+
+select{
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;
+	height:20px;
+	margin: 0;
+	padding: 0;
+}
+
+text{
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;
+	height:15px;
+}
+
+textarea{
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;
+	
+}

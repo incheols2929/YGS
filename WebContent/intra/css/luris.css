@@ -1,0 +1,1106 @@
+@charset "utf-8";
+
+.clearer {
+	clear: both;
+	display: block;
+	width: 100%;
+	height: 0;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.display_none,#accessibility,#noscript_style {
+	display: none;
+}
+
+#navigationArea {
+	text-align: center
+}
+
+#info_content01 {
+	line-height: 20px;
+	margin: 5px 7px 15px 0px;
+	padding: 5px 12px;
+	border: 1px solid #dadada;
+	background-color: #fafafa;
+}
+
+#info_content01 p {
+	margin: 0;
+	padding: 0 0 0 15px;
+	border: none;
+	background: url("http://luris.moct.go.kr/web/images/menu2/arrow_violet.gif") left top no-repeat;
+}
+
+#chk_content01 {
+	margin: 0 5px;
+	padding-bottom: 30px;
+}
+
+#chk_content01 ul {
+	margin: 0;
+	padding: 5px 0 0 20px;
+}
+
+#chk_content01 ul li {
+	margin: 0;
+	padding: 0 0 0 15px;
+	border: none;
+	background: url("http://luris.moct.go.kr/web/images/menu2/arrow_violet.gif") left top no-repeat;
+	color: #1978c7;
+}
+
+#divKLISChrgDeptInfo {
+	position: relative;
+	width: 180px;
+	padding: 23px 0 0px 0;
+	margin: 5px 0 0 9px;
+	background:
+		url("http://luris.moct.go.kr/web/images/menu2/ArLandUsePrintDept/divKLISChrgDeptInfo_top.png")
+		left top no-repeat;
+}
+
+#divArLandUsePrintHistory {
+	position: relative;
+	width: 180px;
+	padding: 23px 0 10px 0;
+	margin: 10px 0 0 9px;
+	background:
+		url("http://luris.moct.go.kr/web/images/menu2/ArLandUsePrintDept/divArLandUsePrintHistory_top.png")
+		left top no-repeat;
+}
+
+#divKLISChrgDeptInfo a {
+	position: absolute;
+	display: block;
+	width: 9px;
+	height: 9px;
+	top: 8px;
+	left: 162px;
+}
+
+#divArLandUsePrintHistory_a {
+	position: absolute;
+	display: block;
+	width: 9px;
+	height: 9px;
+	top: 8px;
+	left: 162px;
+}
+
+#divKLISChrgDeptInfo_bottom,#divArLandUsePrintHistory_bottom {
+	width: 180px;
+	padding: 0 0 5px 0;
+	background:
+		url("http://luris.moct.go.kr/web/images/menu2/ArLandUsePrintDept/divKLISChrgDeptInfo_bottom.png")
+		bottom no-repeat;
+}
+
+#divKLISChrgDeptInfo dl,#divArLandUsePrintHistory dl {
+	padding: 10px 0 0 13px;
+	background-color: #f7f7f7;
+}
+
+#divKLISChrgDeptInfo dt,#divArLandUsePrintHistory dt {
+	display: none;
+}
+
+#divKLISChrgDeptInfo dd,#divArLandUsePrintHistory dd {
+	font-size: 11px;
+	padding: 3px 0 5px 13px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/content_p_arrow.gif") left top
+		no-repeat;
+}
+
+#divArLandUsePrintHistory dd a {
+	width: 152px;
+}
+
+#attention_middle ul,li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+#content #attention_top H4 {
+	display: none
+}
+
+#content #attention_top {
+	background: url("http://luris.moct.go.kr/web/images/menu2/RgMain/content_04_top.jpg") left top
+		no-repeat;
+	margin: 20px 0px 0 0px;
+	height: 42px;
+	padding: 0
+}
+
+#content #attention_middle OL {
+	background: url("http://luris.moct.go.kr/web/images/menu2/RgMain/content_04_middle.jpg");
+	margin: 0px;
+	width: 737px;
+	padding: 0
+}
+
+#content #attention_middle OL LI {
+	background: url("http://luris.moct.go.kr/web/images/menu2/RgMain/content_04_dot.png") left top
+		no-repeat;
+	padding: 5px 15px 0 15px;
+	margin: 0px 10px 0 25px;
+	font-size: 8pt;
+	line-height: 150%
+}
+
+#content #attention_middle strong {
+	color: #D93D11
+}
+
+#content #attention_bottom {
+	background: url("http://luris.moct.go.kr/web/images/menu2/RgMain/content_04_bottom.jpg") left top
+		no-repeat;
+	height: 44px;
+	margin: 0px;
+	padding: 0
+}
+
+/* 레이아웃 ---------------------------------------------------------- */
+	/* ------------------------------------------------------------------- */
+#outer {
+	margin: 0 auto;
+	width: 968px;
+	position: relative;
+}
+
+#body {
+	margin: 0 auto;
+	width: 968px;
+	position: relative;
+}
+
+#container {
+	width: 968px;
+	position: relative;
+}
+
+#header {
+	padding: 10px 61px 0 67px;
+	width: 840px;
+	height: 237px;
+}
+
+#content {
+	width: 740px;
+	overflow: hidden;
+	line-height: 20px;
+}
+
+#sidebar {
+	float: left;
+	width: 203px;
+	margin: 0 15px 0 0;
+}
+
+#footer {
+	clear: both;
+	margin: 30px 0 30px 0;
+	width: 968px;
+	height: 104px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/footer.png") top no-repeat;
+}
+
+/* Header ------------------------------------------------------------ */
+	/* ------------------------------------------------------------------- */
+#header a {
+	display: block;
+}
+
+#header h1 a {
+	float: left;
+	width: 232px;
+	height: 36px;
+}
+
+#header #web_common_menu {
+	float: right;
+	padding: 18px 0 0 0;
+	width: 334px;
+	height: 18px;
+}
+
+#header #web_common_menu a {
+	float: left;
+	height: 18px;
+}
+
+#header #web_common_menu a#header_top_01 {
+	width: 75px;
+}
+
+#header #web_common_menu a#header_top_02 {
+	width: 50px;
+}
+
+#header #web_common_menu a#header_top_03 {
+	width: 51px;
+}
+
+#header #web_common_menu a#header_top_04 {
+	width: 47px;
+}
+
+#header_navi {
+	padding: 16px 0 0 10px;
+	_padding: 13px 0 0 15px;
+}
+
+#header_navi a,#header_navi li {
+	float: left;
+	height: 30px;
+}
+
+#header_navi ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding: 0
+}
+
+/*테이블 캡션display제어를 위해서 추가*/
+table caption {
+	line-height: 0;
+	visibility: hidden;
+}
+
+/*테이블 캡션display제어를 위해서 추가*/ /* 바로가기 링크 세분화를 위해서 추가 */
+#topmenu_list ul {
+	display: none;
+}
+
+#leftmenu_list ul {
+	display: none;
+}
+
+#content_div ul {
+	display: none;
+}
+
+/* 바로가기 링크 세분화 끝*/
+#menu5 {
+	margin-right: 90px;
+}
+
+#menu11,#menu21,#menu31,#menu41,#menu51,#menu61 {
+	visibility: hidden;
+	position: absolute;
+	top: 87px;
+	height: 28px;
+}
+
+#menu11 {
+	left: 95px;
+}
+
+#menu21 {
+	left: 175px;
+}
+
+#menu31 {
+	left: 329px;
+}
+
+#menu41 {
+	left: 351px;
+}
+
+#menu51 {
+	left: 266px;
+}
+
+#menu61 {
+	left: 381px;
+}
+
+#menu11 div,#menu21 div,#menu31 div,#menu41 div,#menu51 div,#menu61 div
+	{
+	position: relative;
+	height: 28px;
+}
+
+#menu11 div {
+	width: 360px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/menu11.gif") left top no-repeat;
+}
+
+#menu21 div {
+	width: 262px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/menu21.gif") left top no-repeat;
+}
+
+#menu31 div {
+	width: 305px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/menu31.gif") left top no-repeat;
+}
+
+#menu41 div {
+	width: 337px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/menu41.gif") left top no-repeat;
+}
+
+#menu51 div {
+	width: 409px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/menu61.gif") left top no-repeat;
+}
+
+#menu61 div {
+	width: 278px;
+	background: url("http://luris.moct.go.kr/web/images/menu2/menu51.gif") left top no-repeat;
+}
+
+#menu11 a,#menu21 a,#menu31 a,#menu41 a,#menu51 a,#menu61 a {
+	float: left;
+	margin-top: 6px;
+	height: 22px;
+}
+
+#web_search {
+	float: left;
+	padding: 8px 0 0 0;
+	_padding: 5px 0 0 0;
+	_width: 150px;
+	height: 30px;
+}
+
+*+html #web_search {
+	padding: 5px 0 0 0;
+	width: 150px;
+}
+
+#web_search input,#web_search button {
+	height: 17px;
+	vertical-align: middle;
+	border: none;
+	background: none;
+}
+
+#web_search input {
+	width: 98px;
+	margin-right: 6px;
+}
+
+#web_search button {
+	width: 44px;
+	_width: 42px;
+	cursor: pointer;
+}
+
+*+html #web_search button {
+	width: 42px;
+}
+
+#web_search button span {
+	display: none;
+}
+
+/* content ----------------------------------------------------------- */
+	/* ------------------------------------------------------------------- */
+#content #content_top #content_top_navi {
+	float: right;
+	padding: 11px;
+}
+
+#content #content_top #content_top_navi h2,#content #content_top #content_top_navi h3
+	{
+	display: inline;
+	font-weight: normal;
+}
+
+#content #content_top #content_top_navi a {
+	margin-left: 5px;
+}
+
+#content #content_top #content_top_navi a img {
+	vertical-align: middle;
+	_vertical-align: middle;
+	_vertical-align: middle;
+}
+
+*+html #content #content_top #content_top_navi a img {
+	vertical-align: middle;
+}
+
+/* footer ------------------------------------------------------------ */
+	/* ------------------------------------------------------------------- */
+#footer	#footer_left {
+	float: left;
+	padding: 3px 0 2px 1px;
+	width: 380px;
+	height: 26px;
+}
+
+#footer	#footer_left a {
+	float: left;
+	display: block;
+	height: 26px;
+}
+
+#footer	#footer_left a span {
+	display: none;
+}
+
+#footer	#footer_left1 {
+	width: 70px;
+}
+
+#footer	#footer_left2 {
+	width: 53px;
+}
+
+#footer	#footer_left3 {
+	width: 57px;
+}
+
+#footer	#footer_left4 {
+	width: 50px;
+}
+
+#footer	#footer_left5 {
+	width: 50px;
+}
+
+#footer	#footer_left6 {
+	width: 97px;
+}
+
+#footer	#footer_right {
+	float: right;
+	padding: 3px 8px 2px 0;
+	width: 221px;
+	height: 26px;
+}
+
+#footer	#footer_right a {
+	float: left;
+	display: block;
+	height: 26px;
+}
+
+#footer	#footer_right a span {
+	display: none;
+}
+
+#footer	#footer_right1 {
+	width: 57px;
+}
+
+
+
+#footer	#footer_right3 {
+	width: 50px;
+}
+
+#footer	#footer_right4 {
+	width: 40px;
+}
+
+#footer	#footer_right5 {
+	width: 70px;
+}
+
+#footer address {
+	display: none;
+}
+
+#footer #footer_mail {
+	float: left;
+	margin: 45px 0px 0 195px;
+	padding: 10px;
+}
+
+#footer #footer_mail a {
+	float: left;
+	display: block;
+	height: 15px;
+	width: 130px
+}
+
+#zoomToogle {
+	position: absolute;
+	top: 280px;
+	left: 990px;
+	width: 101px;
+	height: 115px;
+}
+
+#zoomToogle2 {
+	margin-right: 11px
+}
+
+#zoomToogle #zoomToogle3 {
+	display: block;
+	width: 101px;
+	height: 83px;
+}
+
+#zoomToogle #zoomToogle4 {
+	width: 101px;
+	display: block;
+	height: 32px;
+}
+
+/*********************/ /* 바깥쪽  테이블: 시작 */
+.rt1 {
+	background-color: #F2F2F2;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	overflow: hidden;
+	height: 4px;
+}
+
+.rt2 {
+	background-color: #F2F2F2;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin: 0px 1px 0px 1px;
+	padding: 0px;
+	overflow: hidden;
+	height: 2px;
+}
+
+.rt3 {
+	background-color: #F2F2F2;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin: 0px 2px 0px 2px;
+	padding: 0px;
+	overflow: hidden;
+	height: 1px;
+}
+
+.rt4 {
+	background-color: #F2F2F2;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin: 0px 3px 0px 3px;
+	padding: 0px;
+	overflow: hidden;
+	height: 1px;
+}
+
+.rt5 {
+	background-color: #F2F2F2;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin: 0px 4px 0px 4px;
+	padding: 0px;
+	overflow: hidden;
+	height: 1px;
+}
+
+.rt6 {
+	background-color: #F2F2F2;
+	border-right: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	margin: 0px 5px 0px 5px;
+	padding: 0px;
+	overflow: hidden;
+	height: 1px;
+}
+
+.rt7 { /* 상하단 라인 */
+	background-color: #ccc;
+	margin: 0px 7px 0px 7px;
+	padding: 0px;
+	overflow: hidden;
+	height: 1px;
+}
+
+.rtoutLRline { /* 좌우 라인 */
+	background-color: #F2F2F2;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+/* 바깥쪽  테이블: 끝 */ /* 내용 테이블 */
+.inner_CONTENTS {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 5px 0px 5px;
+}
+
+#ArService_law {
+	display:none;
+}
+
+#ArService {cursor:pointer;}
+
+#ArServiceManage #JO_TITLE {
+	padding-left: 3px;
+}
+
+
+/* 개발자 도구로 작성. 원본 파일을 정확하게 표현한 것이 아닐 수도 있습니다*/
+#content H4 {
+	TEXT-INDENT: -999em; MARGIN: 15px 0px 10px
+}
+#content01 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 0px
+}
+#content02 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 0px
+}
+#content03 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 0px
+}
+#content #content01 H4 {
+	BACKGROUND: url(http://luris.moct.go.kr/web/images/ext/t_04.gif) no-repeat left top
+}
+#content P {
+	TEXT-ALIGN: justify; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 10px 6px; PADDING-LEFT: 12px; PADDING-RIGHT: 5px; BACKGROUND: url(http://luris.moct.go.kr/web/images/menu2/content_p_dot.png) no-repeat left top; PADDING-TOP: 0px
+}
+#content #likeP {
+	TEXT-ALIGN: justify; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 7px; PADDING-LEFT: 12px; PADDING-RIGHT: 5px; BACKGROUND: url(http://luris.moct.go.kr/web/images/menu2/content_p_dot.png) no-repeat left top; PADDING-TOP: 0px
+}
+#content #likeP P {
+	PADDING-BOTTOM: 0px; MARGIN: 10px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px
+}
+
+
+/* 개발자 도구로 작성. 원본 파일을 정확하게 표현한 것이 아닐 수도 있습니다*/
+.border_01 {
+	BORDER-BOTTOM: #4f9fd0 2px solid; BORDER-LEFT: #4f9fd0 2px solid; WIDTH: 691px; HEIGHT: 252px; BORDER-TOP: #4f9fd0 2px solid; BORDER-RIGHT: #4f9fd0 2px solid
+}
+.border_02 {
+	BORDER-BOTTOM: #4f9fd0 1px solid; BORDER-LEFT: #4f9fd0 1px solid; WIDTH: 203px; HEIGHT: 141px; BORDER-TOP: #4f9fd0 1px solid; BORDER-RIGHT: #4f9fd0 1px solid
+}
+.border_03 {
+	BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; WIDTH: 203px; HEIGHT: 141px; BORDER-TOP: #d7d7d7 1px solid; BORDER-RIGHT: #d7d7d7 1px solid
+}
+.border_04 {
+	BORDER-BOTTOM: #d5dee7 2px solid; BORDER-LEFT: #d5dee7 3px solid; WIDTH: 691px; HEIGHT: 252px; BORDER-TOP: #d5dee7 3px solid; BORDER-RIGHT: #d5dee7 3px solid
+}
+.border_05 {
+	BORDER-LEFT: #9ebee5 2px solid; BACKGROUND-COLOR: #9ebee5; WIDTH: 687px; HEIGHT: 58px; BORDER-TOP: #9ebee5 2px solid; BORDER-RIGHT: #9ebee5 2px solid
+}
+.border_06 {
+	BORDER-BOTTOM: #9ebee5 3px solid; BORDER-LEFT: #9ebee5 3px solid; BACKGROUND-COLOR: #9ebee5; WIDTH: 687px; BORDER-RIGHT: #9ebee5 3px solid
+}
+.border_07 {
+	BORDER-RIGHT: #9ebee5 1px solid
+}
+.border_08 {
+	BORDER-BOTTOM: #a0bde7 2px solid; BORDER-LEFT: #a0bde7 3px solid; BORDER-TOP: #a0bde7 3px solid; BORDER-RIGHT: #a0bde7 3px solid
+}
+.img_tt {
+	TEXT-ALIGN: center; BORDER-LEFT: #7790a5 1px solid; WIDTH: 100%; BACKGROUND: url(/web/regguide/guide/img_tit_bg_01.gif); HEIGHT: 30px; BORDER-TOP: #7790a5 1px solid; BORDER-RIGHT: #7790a5 1px solid
+}
+.bg_01 {
+	BACKGROUND-COLOR: #f5f8ff; PADDING-LEFT: 10px; WIDTH: 691px; FONT-FAMILY: "dotum", "Arial"; HEIGHT: 30px; COLOR: #4f5150; FONT-SIZE: 12px
+}
+.bg_03 {
+	BACKGROUND-COLOR: #dde4f3; PADDING-LEFT: 10px; WIDTH: 691px; FONT-FAMILY: "dotum", "Arial"; HEIGHT: 30px; COLOR: #4f5150; FONT-SIZE: 12px
+}
+.bg_04 {
+	BACKGROUND-COLOR: #dde4f3; PADDING-LEFT: 10px; WIDTH: 691px; FONT-FAMILY: "dotum", "Arial"; HEIGHT: 30px; COLOR: #4f5150; FONT-SIZE: 12px
+}
+.padding_01 {
+	PADDING-LEFT: 10px; COLOR: #202020
+}
+.padding_02 {
+	PADDING-LEFT: 10px; COLOR: #7f7f7f
+}
+.padding_03 {
+	PADDING-LEFT: 8px
+}
+.padding_04 {
+	PADDING-LEFT: 13px
+}
+.padding_08 {
+	DISPLAY: block
+}
+.img_03 {
+	WIDTH: 353px; HEIGHT: 47px
+}
+.font_01 {
+	PADDING-LEFT: 3px; DISPLAY: block; FONT-FAMILY: "dotum", "Arial"; COLOR: #006699; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.font_02 {
+	FONT-FAMILY: "dotum", "Arial"; COLOR: #fff; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.font_03 {
+	DISPLAY: block; FONT-FAMILY: "dotum", "Arial"; COLOR: #fff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.font_04 {
+	DISPLAY: block; FONT-FAMILY: "dotum", "Arial"; COLOR: #3e3e3e; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.font_05 {
+	DISPLAY: block; FONT-FAMILY: "dotum", "Arial"; COLOR: #3e3e3e; FONT-SIZE: 11px
+}
+.font_06 {
+	PADDING-LEFT: 3px; DISPLAY: block; FONT-FAMILY: "dotum", "Arial"; COLOR: #404771; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.font_07 {
+	MARGIN-TOP: 10px; PADDING-LEFT: 10px; DISPLAY: block; FONT-FAMILY: "dotum", "Arial"; COLOR: #1d1d1d; FONT-SIZE: 12px
+}
+.font_08 {
+	DISPLAY: block; FONT-FAMILY: "dotum", "Arial"; COLOR: #2a7a88; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.grey_s {
+	COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.grey_1 {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; COLOR: #909090; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.text_1 {
+	COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.sky {
+	HEIGHT: 25px; COLOR: #1978c7; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.SKY {
+	HEIGHT: 25px; COLOR: #1978c7; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.sky_s {
+	COLOR: #1978c7; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.title_b {
+	PADDING-LEFT: 4px; BACKGROUND: #ffffff; HEIGHT: 28px; COLOR: #444444; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.black_b {
+	PADDING-LEFT: 4px; BACKGROUND: #ffffff; COLOR: #444444; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.title_b2 {
+	PADDING-LEFT: 4px; HEIGHT: 28px; COLOR: #444444; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.blue1 {
+	COLOR: #030078; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.blue2 {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; COLOR: #030078; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.red_b1 {
+	PADDING-LEFT: 4px; COLOR: #ba3646; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.greenb1 {
+	COLOR: #18a179; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.green1 {
+	COLOR: #18a179; FONT-SIZE: 12px
+}
+.green_link {
+	COLOR: #18a179
+}
+.id {
+	COLOR: #339999; FONT-WEIGHT: bold
+}
+.pupple_B {
+	COLOR: #ab3570; FONT-WEIGHT: bold
+}
+.pupple_title {
+	COLOR: #ab3570; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.blue_titleb {
+	FONT-FAMILY: "돋움", "Arial"; HEIGHT: 25px; COLOR: #006699; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.purple_titleb {
+	FONT-FAMILY: "돋움", "Arial"; HEIGHT: 25px; COLOR: #ab3570; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.greenb_titleb {
+	FONT-FAMILY: "돋움", "Arial"; COLOR: #006b51; MARGIN-LEFT: -10px; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.grey_line {
+	BORDER-BOTTOM: #eeeeee 1px solid; BORDER-LEFT: #eeeeee 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #eeeeee 1px solid; BORDER-RIGHT: #eeeeee 1px solid; PADDING-TOP: 0px
+}
+.line_g1 {
+	BACKGROUND: #e9e9e9; HEIGHT: 1px
+}
+.line_g1_2 {
+	BACKGROUND: #c8c8c8; HEIGHT: 1px
+}
+.line_g2 {
+	BACKGROUND: #848484; HEIGHT: 1px
+}
+.line_g3 {
+	WIDTH: 1px; BACKGROUND: url(http://luris.moct.go.kr/web/http://luris.moct.go.kr/web/ext/images/common/board_line1.gif) repeat-y
+}
+.line_w1 {
+	BACKGROUND: #ffffff; HEIGHT: 1px
+}
+.tr_over {
+	
+}
+.line_gr1 {
+	BACKGROUND: #4c8fa0; HEIGHT: 2px
+}
+.line_gr2 {
+	BACKGROUND: #c5e1e8; HEIGHT: 2px
+}
+.line_green2 {
+	BACKGROUND: #18a179; HEIGHT: 2px
+}
+.line_int0 {
+	BACKGROUND: #e9e9e9; HEIGHT: 1px
+}
+.line_int1 {
+	BACKGROUND: #c2bfb6; HEIGHT: 1px
+}
+.line_int2 {
+	BACKGROUND: #c2bfb6; HEIGHT: 2px
+}
+.line_p2 {
+	BACKGROUND: #e5b5ce; HEIGHT: 2px
+}
+.line_b2 {
+	BACKGROUND: #557fae; HEIGHT: 2px
+}
+.line_h {
+	WIDTH: 1px; BACKGROUND: url(http://luris.moct.go.kr/web/http://luris.moct.go.kr/web/ext/images/common/height_line1.gif) repeat-y; HEIGHT: 29px
+}
+.line_h1 {
+	WIDTH: 1px; BACKGROUND: url(http://luris.moct.go.kr/web/http://luris.moct.go.kr/web/ext/images/common/height_line.gif) #f7f7f7 repeat-y; HEIGHT: 29px
+}
+.line_h2 {
+	WIDTH: 1px; BACKGROUND: url(http://luris.moct.go.kr/web/http://luris.moct.go.kr/web/ext/images/common/height_line1.gif) #f7f7f7 repeat-y; HEIGHT: 29px
+}
+.line_h3 {
+	WIDTH: 1px; BACKGROUND: url(http://luris.moct.go.kr/web/http://luris.moct.go.kr/web/ext/images/common/height_line2.gif) #f1e1ee no-repeat; HEIGHT: 29px
+}
+.line_dot1 {
+	BACKGROUND: url(http://luris.moct.go.kr/web/http://luris.moct.go.kr/web/ext/images/common/dot_line1.gif) #f7f7f7 repeat-x; HEIGHT: 1px
+}
+.line_dot2 {
+	BACKGROUND: url(http://luris.moct.go.kr/web/http://luris.moct.go.kr/web/ext/images/common/dot_line2.gif) #f7f7f7 repeat-x; HEIGHT: 1px
+}
+.blank4 {
+	HEIGHT: 2px
+}
+.reg_s1 {
+	BACKGROUND: #c1cfd8; HEIGHT: 25px; COLOR: #01324e; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.reg_s2 {
+	BACKGROUND: #527b93; HEIGHT: 25px; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.left_menu {
+	HEIGHT: 25px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.intra_t1 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #efece5; HEIGHT: 25px; COLOR: #76642f; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.intra_t2 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #cbe7e1; COLOR: #006666; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.intra_t2_1 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #cbe7e1; COLOR: #006666; FONT-SIZE: 13px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.intra_t3 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7f7; HEIGHT: 25px; COLOR: #006485; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.intra_t3_1 {
+	PADDING-LEFT: 4px; BACKGROUND: #f7f7f7; HEIGHT: 28px; COLOR: #006485; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.intra_t3_7 {
+	PADDING-LEFT: 4px; BACKGROUND: #f7f7f7; HEIGHT: 28px; COLOR: #cc0066; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.intra_t4 {
+	MARGIN: 5px 5px 0px 0px; PADDING-LEFT: 4px; BACKGROUND: #fcfcfc; HEIGHT: 28px; COLOR: #067b53; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.intra_t6 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7f7; HEIGHT: 25px; COLOR: #ab3570; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.intra_t7 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 5px; BACKGROUND: #a1cae6; HEIGHT: 25px; COLOR: #10465f; FONT-SIZE: 13px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.intra_t8 {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; HEIGHT: 25px; COLOR: #006485; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.intra_t3_2 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #ffffff; HEIGHT: 25px; COLOR: #006485; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.p {
+	TEXT-ALIGN: justify; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.P {
+	TEXT-ALIGN: justify; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.p2 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 20px; PADDING-TOP: 0px
+}
+.p3 {
+	TEXT-ALIGN: justify; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+.p_icon {
+	TEXT-ALIGN: right; PADDING-TOP: 7px
+}
+.chartp {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 0px; PADDING-TOP: 2px
+}
+.blank {
+	HEIGHT: 5px
+}
+.blank2 {
+	HEIGHT: 10px
+}
+.upload {
+	TEXT-ALIGN: left; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 10px
+}
+.upload1 {
+	PADDING-BOTTOM: 0px; MARGIN-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-LEFT: -10px; PADDING-TOP: 0px
+}
+.input_n {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 75px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_S2 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 130px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_S {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 100px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_SS {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 80px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_SS2 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 40px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_SS3 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 50px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_SM {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 150px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_SM2 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 110px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_SM_line {
+	BORDER-BOTTOM: #999999 0px solid; BORDER-LEFT: #999999 0px solid; WIDTH: 230px; HEIGHT: 16px; COLOR: #111111; FONT-SIZE: 12px; BORDER-TOP: #999999 0px solid; BORDER-RIGHT: #ffffff 0px solid
+}
+.input_M {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 200px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_MT {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 300px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_T {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 506px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_T2 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 468px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_T3 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 468px; HEIGHT: 16px; COLOR: #696969; FONT-SIZE: 13px; BORDER-TOP: #aeaeae 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_TL {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 390px; HEIGHT: 170px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_L {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 608px; HEIGHT: 300px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_L2 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 608px; HEIGHT: 170px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_L3 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 726px; HEIGHT: 300px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_L33 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 726px; HEIGHT: 120px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+.input_L4 {
+	BORDER-BOTTOM: #aeaeae 1px solid; BORDER-LEFT: #aeaeae 1px solid; WIDTH: 650px; HEIGHT: 50px; COLOR: #696969; FONT-SIZE: 12px; BORDER-TOP: #aeaeae 1px solid; BORDER-RIGHT: #aeaeae 1px solid
+}
+SELECT.input_S {
+	HEIGHT: 20px
+}
+SELECT.input_SS {
+	HEIGHT: 20px
+}
+#wrap {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 1500px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#layer1 {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 80px; PADDING-RIGHT: 0px; BACKGROUND: #ffffff; PADDING-TOP: 0px
+}
+#layer2 {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 80px; PADDING-RIGHT: 0px; BACKGROUND: #ffffff; PADDING-TOP: 0px
+}
+#button {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #ffffff; PADDING-TOP: 5px
+}
+#button1 {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #ffffff; PADDING-TOP: 5px
+}
+#button2 {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #ffffff; PADDING-TOP: 5px
+}
+#noScrButton {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BACKGROUND: #ffffff; PADDING-TOP: 5px
+}
+#navi {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 735px; PADDING-RIGHT: 0px; BACKGROUND: #ffffff; HEIGHT: 100%; PADDING-TOP: 5px
+}
+UL.upload {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+UL.download {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+.upload UL LI {
+	PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+UL.upload LI SPAN A {
+	COLOR: red; MARGIN-LEFT: 10px; CURSOR: pointer
+}
+.P_1HANG {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: -20px; MARGIN: 0px 0px 0px 20px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.P_2HANG {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: 0px; MARGIN: 0px 0px 0px 10px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.P_HO {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: -18px; MARGIN: 0px 0px 0px 43px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.P_MOK {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: -25px; MARGIN: 0px 0px 0px 63px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.P_SEMOK {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: -30px; MARGIN: 0px 0px 0px 73px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.P_BU_HANG {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: -13px; MARGIN: 0px 0px 0px 25px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.P_BU_MOK {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: -20px; MARGIN: 0px 0px 0px 60px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.P_3HANG {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 20px; TEXT-INDENT: -13px; MARGIN: 5px 0px 5px 14px; FONT-FAMILY: "돋움", "Arial"; FONT-SIZE: 12px
+}
+.P_4HANG {
+	TEXT-ALIGN: justify; TEXT-INDENT: 0px; MARGIN: 0px 0px 0px 12px; FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px; valign: middle
+}
+.SPAN_JO_TITLE {
+	FONT-FAMILY: "돋움", "Arial"; COLOR: #006699; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.SPAN_ALLJO {
+	FONT-FAMILY: "돋움", "Arial"; COLOR: #000000; FONT-SIZE: 12px
+}
+.SPAN_BU_ALL {
+	FONT-FAMILY: "돋움", "Arial"; COLOR: #006699; FONT-SIZE: 12px
+}
+.SPAN_BIG_JO_TITLE {
+	TEXT-ALIGN: justify; FONT-FAMILY: "돋움", "Arial"; COLOR: #006699; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+UL.qnode LI {
+	LINE-HEIGHT: 160%; WORD-BREAK: break-all
+}
+.P_4HANG_sub A {
+	LINE-HEIGHT: 160%; WORD-BREAK: break-all
+}
+UL.qnode {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-LEFT: 17px; PADDING-TOP: 0px
+}
+UL.qnode LI {
+	LIST-STYLE-IMAGE: url(http://luris.moct.go.kr/web/images/common/icon_front4_1.gif)
+}
+ 
+ 

@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("btn.css");
+
+@font-face {
+	font-family: 'NanumG';
+	src: url('NanumGothic.eot');
+	src: local(※), url('NanumGothic.woff') format('woff'), url('NanumGothic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumG_EB';
+	src: url('NanumGothicExtraBold.eot');
+	src: local(※), url('NanumGothicExtraBold.woff') format('woff'), url('NanumGothicExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumBG_B';
+	src: url('NanumBarunGothicBold.eot');
+	src: local(※), url('NanumBarunGothicBold.woff') format('woff'), url('NanumBarunGothicBold.ttf') format('truetype');
+}
+
+table, thead, tbody, tfoot, tr, th, td, button {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	/* overflow-y: hidden; */
+}
+
+form, img { border: none; margin: 0; padding: 0; }
+
+* {
+	font-family: NanumGothic, NanumG, Arial;
+	font-size: 9pt;
+	color: #000000;
+	line-height: 160%;
+}
+
+input[type=text], input[type=password], textarea {
+	height: 20px;
+	line-height: 100%;
+	border: solid 1px #cccccc;
+}
+
+select {
+	border: solid 1px #cccccc;
+}
+
+#wrap {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.scroll_tran {
+	scrollbar-3dlight-color: #dfdfdf;
+	scrollbar-arrow-color: #dfdfdf;
+	scrollbar-base-color: #dfdfdf;
+	scrollbar-face-color: #dfdfdf;
+	scrollbar-track-color: #dfdfdf;
+	scrollbar-darkshadow-color: #dfdfdf;
+	scrollbar-highlight-color: #dfdfdf;
+	scrollbar-shadow-color: #dfdfdf;
+}
+
+.scroll_tran::-webkit-scrollbar{
+    background-color: #dfdfdf;
+}
+
+h1.tit {
+	margin: 0;
+	padding: 15px 0px 7px 10px;
+}
+
+h1.tit > div {
+	margin: 0;
+	padding-left: 8px;
+	line-height: 100%;
+	background: url(../img/title_h.png) bottom left no-repeat;
+}
+
+h1.tit > div > span {
+	font-family: NanumGothicExtraBold, NanumG_EB;
+	/* font-family: NanumBarunGothicBold, NanumBG_B; */
+	font-size: 14pt;
+	font-stretch: ultra-condensed;
+	line-height: 100%;
+	padding-top: 12px;
+	padding-right: 16px;
+	color: #3f5c9b;
+	background: url(../img/title_t.png) top right no-repeat;
+}
+
+.bar_btns {
+	text-align: center;
+	padding: 10px;
+}

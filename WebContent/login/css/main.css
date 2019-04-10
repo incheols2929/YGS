@@ -1,0 +1,69 @@
+@font-face{
+	font-family: "NanumGothic";
+	src: url('/css/NanumBarunGothic.eot');
+	src: local(※), url('/css/NanumBarunGothic.woff') format('woff');
+}
+
+html, body { 
+	margin:0; padding:0;
+	font-family:'나눔고딕',NanumGothic,nanumgothicweb,'돋움',dotum,Helvetica,sans-serif;
+}
+
+div{
+	font-size: 12px;
+	letter-spacing: -1px;
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif;
+	scrollbar-arrow-color: #464646;
+	scrollbar-3dlight-color: #CCCCCC;
+	scrollbar-darkshadow-color: #999999;
+	scrollbar-face-color: #D4D0C8;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #CCCCCC;
+	scrollbar-track-color: #e6e6e6;
+}
+ul,li,dl,dt,dd,ol,p,h1,h2,h3,h4,h5,h6,form  {
+	/**font-size:  80%;*/
+	margin:0;
+	padding:0;
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; 
+	font-size: 12px;
+	scrollbar-arrow-color: #464646;
+	scrollbar-3dlight-color: #CCCCCC;
+	scrollbar-darkshadow-color: #999999;
+	scrollbar-face-color: #D4D0C8;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #CCCCCC;
+	scrollbar-track-color: #e6e6e6;
+}
+
+
+A:link {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;  color: #333333; text-decoration: none;}
+A:visited {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt; color: #333333; text-decoration: none;}
+A:active {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt; color: #2270bf; text-decoration: none;}
+A:hover {  font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 8pt;  color: #2270bf; text-decoration: none;}
+
+
+
+select{
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 13px;
+	padding:2px 0px 0px 3px;
+	font-weight: 200;
+}
+
+select{
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 12px;
+	height:20px;
+	margin: 0;
+	padding: 0;
+}
+
+text{
+	font-family:NanumGothic,나눔고딕,굴림,Gulim,AppleGothic,sans-serif; font-size: 12px;
+	height:15px;
+}
+
+img {
+	border:0;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/

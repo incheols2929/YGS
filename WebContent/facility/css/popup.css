@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@import url("default.css");
+@import url("comm.css");
+#header { position:relative; margin:0 0 5px 0; height:68px; border-bottom:#000000 1px solid;  background-position:15px 2px; z-index:1000; }
+#header * { float:left; }
+#header h1 { margin:11px 0 0 165px; z-index:900; }
+#header h1 label { padding:7px 18px 0 0; font-size:18px; font-weight:bold; color:#cefcff; }
+#header h1 ul { position:absolute; top:18px; left:190px; width:265px; height:32px; border:#3880ac 1px solid; overflow: hidden; z-index:1000; }
+#header h1 ul li { display:none; width:100%; }
+#header h1 ul li a { width:100%; text-align:left; }
+#header h1 ul li.select { display:inline-block; }
+#header h1 ul li.select a, .header li a:hover, .header li a:focus { font-size:18px; font-weight:bold; text-align:left; }
+#header h1 ul li.select a { padding:6px 0 6px 6px; color:#FFF; background-image:url(../images/comm/icon_search_select.png); background-position:center right; background-repeat:no-repeat; background-color:#265b8f; }
+#header h1 ul.select { padding:3px 0; height:auto; max-height:460px; box-shadow:rgba(0,0,0,0.5) 1px 1px 5px; border:#000 1px solid; background-image:none; background-color:#FFf; overflow-y:scroll; z-index:3000; overflow-y:scroll; }
+#header h1 ul.select li { display:inline-block; }
+#header h1 ul.select li a { padding:5px 0 5px 9px; font-size:14px; color:#000; background-image:none;}
+#header h1 ul.select li a:hover { color:#FFF; background-color:#103f6d; }
+#header h1.sumun ul.select { top:5px; left:4px; padding:5px 0 5px 5px; width:822px; max-height:550px; background-color:#a0e1ea !important; background:#FFF; }
+#header h1.sumun ul.select li { float: left; margin: 0 1px 1px 0; width: 112px; }
+#header h1.sumun ul.select li a, .header h1.sumun ul.select li.select a  { padding: 3px 0 0 0; height: 20px; font-size: 12px; }
+#header h1.sumun ul.select li a { font-weight: normal; color:#287588; text-align: center; white-space: nowrap; background:#F4FDFF; }
+#header h1.sumun ul.select li a:hover { font-size: 12px; }
+#header h1.sumun ul.select li.select a { font-weight: bold; }
+#header h1 ul.select li a:hover, .header h1 ul.select li a:focus { font-size:14px; color:#FFF; background-color:#2A83E1; }
+#header h1 ul.select li.select a, .header h1 ul.select li.select a:hover { color:#FFF; background-color:#103f6d;  }
+#header .org{ float:right; margin:18px 18px 0 0; padding:8px 15px; border-radius:20px; background:#265b8f; }
+#header .org span { padding:0 0 0 9px; font-size:14px; font-weight:bold; color:#cbe5ff; }
+#header .org span:first-child { padding:0; font-weight:normal; }
+
+.header { position:relative; margin:0 0 18px 0; height:68px; border-bottom:#000000 1px solid; background:url(../img/bg_popup.png) bottom left no-repeat #2a649d; background-position:15px 2px; z-index:1000; }
+.header * { float:left; }
+.header h1 { margin:18px 0 0 98px; z-index:900; }
+.header h1 label { padding:7px 18px 0 0; font-size:18px; font-weight:bold; color:#cefcff; }
+.header h1 ul { position:absolute; top:18px; left:190px; width:265px; height:32px; border:#3880ac 1px solid; overflow: hidden; z-index:1000; }
+.header h1 ul li { display:none; width:100%; }
+.header h1 ul li a { width:100%; text-align:left; }
+.header h1 ul li.select { display:inline-block; }
+.header h1 ul li.select a, .header li a:hover, .header li a:focus { font-size:18px; font-weight:bold; text-align:left; }
+.header h1 ul li.select a { padding:6px 0 6px 6px; color:#FFF; background-image:url(../images/comm/icon_search_select.png); background-position:center right; background-repeat:no-repeat; background-color:#265b8f; }
+.header h1 ul.select { padding:3px 0; height:auto; max-height:460px; box-shadow:rgba(0,0,0,0.5) 1px 1px 5px; border:#000 1px solid; background-image:none; background-color:#FFf; overflow-y:scroll; z-index:3000; overflow-y:scroll; }
+.header h1 ul.select li { display:inline-block; }
+.header h1 ul.select li a { padding:5px 0 5px 9px; font-size:14px; color:#000; background-image:none;}
+.header h1 ul.select li a:hover { color:#FFF; background-color:#103f6d; }
+.header h1.sumun ul.select { top:5px; left:4px; padding:5px 0 5px 5px; width:822px; max-height:550px; background-color:#a0e1ea !important; background:#FFF; }
+.header h1.sumun ul.select li { float: left; margin: 0 1px 1px 0; width: 112px; }
+.header h1.sumun ul.select li a, .header h1.sumun ul.select li.select a  { padding: 3px 0 0 0; height: 20px; font-size: 12px; }
+.header h1.sumun ul.select li a { font-weight: normal; color:#287588; text-align: center; white-space: nowrap; background:#F4FDFF; }
+.header h1.sumun ul.select li a:hover { font-size: 12px; }
+.header h1.sumun ul.select li.select a { font-weight: bold; }
+.header h1 ul.select li a:hover, .header h1 ul.select li a:focus { font-size:14px; color:#FFF; background-color:#2A83E1; }
+.header h1 ul.select li.select a, .header h1 ul.select li.select a:hover { color:#FFF; background-color:#103f6d;  }
+.header .org{ float:right; margin:18px 18px 0 0; padding:8px 15px; border-radius:20px; background:#265b8f; }
+.header .org span { padding:0 0 0 9px; font-size:14px; font-weight:bold; color:#cbe5ff; }
+.header .org span:first-child { padding:0; font-weight:normal; }
+dl.address { display:inline-block; float:left; margin:-18px 0 12px 0; width:100%; color:#B5CFFF; background-color:#134779; }
+dl.address * { float:left; }
+dl.address dt { padding:9px 5px 9px 100px; font-weight:bold; }
+dl.address dd { padding:9px 0; }
+.rf_search, .wl_search, .dam_search, .bo_search { float:left; margin:0 0 12px 0; width:95%; }
+.rf_search fieldset, .dam_search fieldset, .bo_search fieldset { min-width:60%; }
+fieldset{
+	/* background-color:#912341; */
+}
+.wl_search fieldset { min-width:30%; }
+.wl_search fieldset label{ display:block; -webkit-padding-start:2px; -webkit-padding-end:2px; }
+.wl_search fieldset { min-width:30%; }
+.wl_search fieldset label select {  
+	width: 200px; /* 원하는 너비설정 */ 
+	padding: .8em .5em; /* 여백으로 높이 설정 */ 
+	font-family: inherit; /* 폰트 상속 */ 
+	background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */ 
+	border: 1px solid #999; border-radius: 0px; /* iOS 둥근모서리 제거 */ 
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+	-moz-appearance: none; 
+	appearance: none;
+}
+select {
+  width: 200px;
+  height:26px;
+  padding: .8em .5em;
+  font-family: inherit;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #999;
+  border-radius: 0px;
+}
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+.contents { margin:0 15px; width:96%; }
+.contents_bo, .contents_bo dl.address { width:856px; }
+button.inset { float:right; width:90px; height:38px; color:#FFF; border:none; background-color:#00a0cd; background-repeat:no-repeat; background-position:15px 8px; background-image:url(../img/icon_inset.png); }
+button.serch { float:right; width:90px; height:38px; color:#FFF; border:none; background-color:#00a0cd; background-repeat:no-repeat; background-position:15px 7px; background-image:url(../img/icon_serch.png); }
+button.inset:hover, button.inset:focus { background-color:#00629b; }
+.damtop_btarea{float:right;}
+button.serch:hover, button.serch:focus { background-color:#00629b; }
+button.inset span { padding:0 0 0 24px; font-weight:bold; }
+button.serch span { padding:0 0 0 20px; font-weight:bold; }
+.graph { float:left; width:505px; height:410px; text-align:left; background-color:#e2e2e2; }
+#rainfallChart, #waterlevelChart { display:inline-block; width:auto; margin:10px 0 0 10px; }
+.table { padding:40px 0 0 0; float:right; width:100%; /* height:410px; */ }
+.tableChart {padding:0 0 0 0; float:right; width:100%;  /* height:410px; */  }
+*:first-child+html .table { height:367px; }
+table { margin:0; }
+.table table { width:96%; }
+.table table th { font-weight:normal; }
+.table table.fixed { margin:-40px 0 0 0; }
+.table table.fixed th { padding:0; height:40px; }
+.tableChart { margin:0; }
+.tableChart table { width:96%; }
+.tableChart .tableChart th { font-weight:normal; }
+.tableChart .tableChart.fixed { margin:-40px 0 0 0; }
+.tableChart .tableChart.fixed th { padding:0; height:40px; }
+/* .table table.scroll tbody td { padding:0 5px 0 0; text-align:right; } */
+.bo_table { width:344px; }
+.bo_table table { width:328px }
+.header h1 ul.brief { left:200px; }
+.contents_brief { width:618px; }
+.graph_brief { margin:0 10px 0 0; width:408px; height:268px; }
+table.brief { margin:0; width:200px; }
+table.brief th, table.brief td { min-height:0; }
+table.brief th { padding:0; }
+table.brief td { padding:0 5px 0 0; text-align:right; }
+
+/* 2015.13.25 댐자료 */
+.dampop_tabarea{float:right; display:inline-block; border:1px solid #e1e1e1; margin-left:15px;}
+.dampop_tabarea ul {float:right;}
+.dampop_tabarea ul, li {display:inline-block;}
+.dampop_tabarea ul li {background:#dff7ff; border-right:4px solid #e1e1e1;}
+.dampop_tabarea ul li:last-child {border-right:none;}
+.dampop_tabarea ul li a { padding: 12px; cursor: pointer;}
+.dampop_tabarea ul li a:hover{background:#03aede; color:#fff;}
+.dampop_tabarea .brd {border-radius:0px;}
+/* 추가화면 버튼  */
+.save_button{float:center; display:inline-block; border:1px solid #e1e1e1; margin-left:15px;}
+.save_button ul {float:right;}
+.save_button ul, li {display:inline-block;}
+.save_button ul li {background:#dff7ff; border-right:4px solid #e1e1e1;}
+.save_button ul li:last-child {border-right:none;}
+.save_button ul li a { padding: 12px; cursor: pointer;}
+.save_button ul li a:hover{background:#03aede; color:#fff;}
+.save_button .brd {border-radius:0px;}
+/* 버튼이미지  */
+.cancel { float:right; width:68px; height:33px; color:#FFF; border:none; background-color:#00a0cd; background-repeat:no-repeat; background-position:15px 8px; /* background-image:url(../img/icon_inset.png); */ }
+.save { float:right; width:68px; height:33px; color:#FFF; border:none; background-color:#00a0cd; background-repeat:no-repeat; background-position:15px 8px; /* background-image:url(../img/icon_inset.png);  */}
+button.cancel { float:right; width:68px; height:33px; color:#FFF; border:none; background-color:#00a0cd; background-repeat:no-repeat; background-position:15px 7px; /* background-image:url(../img/icon_serch.png); */ }
+button.save:hover, button.save:focus { background-color:#00629b; }
+.save_button{float:center;}
+button.cancel:hover, button.cancel:focus { background-color:#00629b; }
+button.save span { /* padding:0 0 0 50px; */ font-weight:bold; text-agiln:center;}
+button.cancel span { /* padding:0 0 0 50px; */ font-weight:bold; text-agiln:center; }
+
+#inserttable {padding:0 0 0 0; float:right; width:100%;  /* height:410px; */  }
+#inserttable { margin:0; }
+#inserttable table { width:100%; }
+#inserttable .inserttable th { font-weight:normal; }
+#inserttable .inserttable.fixed { margin:-40px 0 0 0; }
+#inserttable .inserttable.fixed th { padding:0; height:40px; }
+
+/* 
+.dampop_btarea{float:right; display:inline-block; border:1px solid #e1e1e1; margin-left:15px;}
+.dampop_btarea ul {float:right;}
+.dampop_btarea ul, li {display:inline-block;}
+.dampop_btarea ul li {background:#dff7ff; border-right:4px solid #e1e1e1;}
+.dampop_btarea ul li:last-child {border-right:none;}
+.dampop_btarea ul li a { padding: 12px; cursor: pointer;}
+.dampop_btarea ul li a:hover{background:#03aede; color:#fff;}
+.dampop_btarea .brd {border-radius:0px;} */

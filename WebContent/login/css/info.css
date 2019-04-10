@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+#wrap {
+	margin:0 auto;
+	width: 985px; height: 700px;
+}
+#top_btn { 
+	position: relative;
+	margin-bottom: 5px;
+}
+#top_btn #go_main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 25px;
+	cursor: pointer;
+}
+
+
+
+/*************** 즐겨찾기 **************/
+#left {
+	float: left;
+	width: 236px; height: 643px;
+	background-image: url("/login/img/bookmark/bg1.png"); background-repeat:no-repeat;
+}
+
+#left #header1 {
+	margin: 10px 0 0 10px;
+	float: left;
+}
+#left #box1 {
+	margin-top:40px;
+}
+#left #content1 {
+	margin-left:10px;
+	font-size:12px;
+}
+#left #title{
+}
+#left #btn{
+	margin:-18px 0 0 200px ;
+	width:50px;
+	
+}
+#left #list{
+	margin:0 0 0 20px;
+}
+
+
+/*************** 공지사항 **************/
+#right1 {
+	margin: 0 0 0 13px;
+	float: left;
+	width: 736px; height: 246px;
+	background-image: url("/login/img/bookmark/bg2.png"); background-repeat:no-repeat;
+}
+#right1 #header2 {
+	margin: 10px 0 0 10px;
+	float:left;
+}
+#right1 #box2 {
+    width: 715px;
+    height: 197px;
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+#right1 #content2 {
+	margin-left:20px;
+	font-family:Arial, GulimChe;
+	font-size:12px;
+}
+
+
+/*************** 도움말 **************/
+#help {
+	margin: 16px 0 0 13px;
+	float: left;
+	width: 461px; height: 116px;
+	background-image: url("/login/img/bookmark/bg3.png"); background-repeat:no-repeat;
+}
+#help #header3 {
+	margin: 10px 0 10px 10px;
+}
+
+
+
+#logoutWrap {
+	margin: 16px 0 0 0;
+	float: left;
+	text-align: right;
+	width: 270px; height: 116px;
+}
+#logoutWrap .btn {
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+
+/*************** 다운로드 **************/
+.right2 {
+	margin: 16px 0 0 13px;
+	float: left;
+	width: 163px; height: 248px;
+	background-image: url("/login/img/bookmark/bg4.png"); background-repeat:no-repeat;
+}
+
+.downWrap img {
+	margin-top: 15px;
+}
+
+.downWrap .downBtn {
+	margin-top: 15px;
+	width: 112px;
+	height: 26px;
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+	background-image: url("/login/img/bookmark/down_btn_normal.png");
+}
+.downWrap .downBtn:HOVER {
+	background-image: url("/login/img/bookmark/down_btn_over.png");
+}
+
+
+/*************** 들어가기 **************/
+#right3 {
+	margin: 16px 0 0 11px;
+	float: left;
+	width: 210px; height: 250px;
+	background-image: url("/login/img/bookmark/bg5.png"); background-repeat:no-repeat;
+}
+
+#right3 #header4 {
+	margin: 10px 0 10px 10px;
+}
+
+#right3 #enter_view {
+	text-align: center;
+}
+
+#right3 #enter_view #input_purpose {
+	width: 161px;
+	width: 160px \0/IE8;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+	border: 0;
+	background-color: transparent;
+	background-image: url("/login/img/bookmark/input_form.png");
+}
+
+#right3 #enter_view #enter_btn {
+	width: 80px;
+	height: 30px;
+	cursor: pointer;
+	border: 0;
+	background-image: url("/login/img/bookmark/enter_btn_normal.png");
+}#right3 #enter_view #enter_btn:HOVER {
+	background-image: url("/login/img/bookmark/enter_btn_over.png");
+}

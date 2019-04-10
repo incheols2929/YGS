@@ -1,0 +1,109 @@
+@font-face{
+	font-family: "NanumGothic";
+	src: url('/css/NanumBarunGothic.eot');
+	src: local(※), url('/css/NanumBarunGothic.woff') format('woff');
+}
+
+html, body { 
+	margin:0; padding:0; color:#FFF; font-size:10px;
+	font-family:'나눔고딕',NanumGothic,nanumgothicweb,'돋움',dotum,Helvetica,sans-serif;
+}
+
+#backImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+img	{ 
+	vertical-align:top; border:none;
+}
+
+#wrap {
+	margin:0 auto;
+	width: 721px; height:581px;
+	text-align: center;
+}
+
+#memberLogin {
+	width: 721px;
+	height: 80px;
+	margin-top: 80px;
+	background-image: url("/login/img/login/login_bg.png");
+}
+
+#loginWrap {
+    width: 390px;
+    height: 100%;
+    margin-left: 212px;
+    border: 0;
+}
+
+#usr_id {
+	width: 130px;
+	width: 128px \0/IE8;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 10px;
+	border: 0;
+	background-image: url("/login/img/login/input_id_normal.png");
+	background-color: transparent;
+}#usr_id:FOCUS {
+	background-image: url("/login/img/login/input_id_on.png");
+}
+
+#usr_pw {
+	width: 130px;
+	width: 128px \0/IE8;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 10px;
+	border: 0;
+	background-image: url("/login/img/login/input_pw_normal.png");
+	background-color: transparent;
+}#usr_pw:FOCUS {
+	background-image: url("/login/img/login/input_pw_on.png");
+}
+
+#login_btn {
+	cursor: pointer;	
+}#login_btn:HOVER {
+	background-image: url("/login/img/login/btn_login_over.png");
+}
+
+#regWrap {
+	display: none;
+	position: absolute;
+	width: 145px;
+	height: 60px;
+	margin-top: 5px;
+	background-image: url("/login/img/login/popup_id.png");
+}#regWrap a {
+    font-size: 11px;
+    position: absolute;
+    top: 36px;
+    left: 53px;
+    left: 50px \0/IE8;
+    color: #818282;
+    font-weight: bold;
+}
+
+#inqWrap {
+	display: none;
+	position: absolute;
+	width: 145px;
+	height: 60px;
+	margin-top: 5px;
+	background-image: url("/login/img/login/popup_pw.png");
+}#inqWrap a {
+    font-size: 11px;
+    position: absolute;
+    top: 36px;
+    left: 53px;
+    left: 50px \0/IE8;
+    color: #818282;
+    font-weight: bold;
+}

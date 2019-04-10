@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+#pageNav {
+	height: 25px;
+	padding-top: 5px;
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+/*
+#pageNav A,#pageNav A:visited,#pageNav A:hover {
+	font: bold 10pt Arial;
+	text-decoration: none;
+	color: #395692;
+}
+
+#pnFirst,#pnPre,#pnCpage,.pnGpage,#pnNext,#pnLast {
+	height: 20px;
+	border: solid 1px #395692;
+	padding: 2px 5px 2px 5px;
+	margin-left: 3px;
+}
+
+#pnFirst {
+	
+}
+
+#pnPre {
+	
+}
+
+#pnCpage {
+	font: bold 10pt Arial;
+	color: #ffffff;
+	background-color: #4c6aaa;
+}
+*/
+.pnGpage {
+	
+}
+
+#pnNext {
+	
+}
