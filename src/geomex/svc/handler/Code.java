@@ -3907,14 +3907,16 @@ public class Code {
 	///////////////////////////////////////// 필지정보///////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// 공사유지관리필지 공사관리 년도
-	public static ArrayList<srchReservoirRecord> getSrchFacilityAg_parc_dt(String ftridn) {
+	public static ArrayList<srchReservoirRecord> getSrchFacilityAg_parc_dt(String ftridn,String tableName,String gbn) {
 		ArrayList<srchReservoirRecord> list = new ArrayList<srchReservoirRecord>();
 		DBHandler handler = new DBHandler();
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("select * ");
-		sb.append("from ag_parc_dt  ");
-		sb.append("where FTR_IDN = '" + ftridn + "' order by FTR_IDN ");
+		sb.append(" select t1.land_area,t1.tra_area,t1.ownr_nm,t1.jimok,t1.etc,t2.juso ");
+		sb.append(" from ag_parc_dt t1 ");
+		sb.append(" left join "+tableName+" t2 on t1.ftr_idn = t2.ftr_idn ");
+		sb.append(" where t1.ftr_cde = '"+gbn+"' ");
+		sb.append(" and t1.ftr_idn = '"+ftridn+"' ");
 		try {
 			handler.open(Const.CONTEXT_NAME);
 			handler.setQuery(sb.toString());
@@ -3922,10 +3924,12 @@ public class Code {
 
 			while (handler.next()) {
 				srchReservoirRecord sfr = new srchReservoirRecord();
-				sfr.LAND_AREA = Utils.chkNull(handler.getString("LAND_AREA"));
-				sfr.TRA_AREA = Utils.chkNull(handler.getString("TRA_AREA"));
-				sfr.OWNR_NM = Utils.chkNull(handler.getString("OWNR_NM"));
-				sfr.F_ETC = Utils.chkNull(handler.getString("ETC"));
+				sfr.LAND_AREA = Utils.chkNull(handler.getString("land_area"));
+				sfr.TRA_AREA = Utils.chkNull(handler.getString("tra_area"));
+				sfr.OWNR_NM = Utils.chkNull(handler.getString("ownr_nm"));
+				sfr.jimok = Utils.chkNull(handler.getString("jimok"));
+				sfr.ETC = Utils.chkNull(handler.getString("etc"));
+				sfr.juso = Utils.chkNull(handler.getString("juso"));
 				list.add(sfr);
 			}
 		} catch (Exception e) {
@@ -8496,6 +8500,265 @@ public class Code {
 			return idn;
 		}
 
-	
-	
+	////주상도l1
+		public static String getSrchJoosangL1(String ftridn) {
+			String data = "";
+
+			DBHandler handler = new DBHandler();
+			StringBuilder sb = new StringBuilder();
+
+			sb.append("select l1 as data ");
+			sb.append("from ag_tbw_ps  ");
+			sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+			try {
+				handler.open(Const.CONTEXT_NAME);
+				handler.setQuery(sb.toString());
+				handler.execute();
+				if (handler.next()) {
+					data = Utils.chkNull(handler.getString("data"));
+
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				handler.close();
+			}
+			return data;
+		}
+		////주상도l1_v
+		public static String getSrchJoosangL1_v(String ftridn) {
+			String data = "";
+
+			DBHandler handler = new DBHandler();
+			StringBuilder sb = new StringBuilder();
+
+			sb.append("select l1_v as data ");
+			sb.append("from ag_tbw_ps  ");
+			sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+			try {
+				handler.open(Const.CONTEXT_NAME);
+				handler.setQuery(sb.toString());
+				handler.execute();
+				if (handler.next()) {
+					data = Utils.chkNull(handler.getString("data"));
+
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				handler.close();
+			}
+			return data;
+		}
+		////그라우팅
+		public static String getSrchJoosangGrouting(String ftridn) {
+			String data = "";
+
+			DBHandler handler = new DBHandler();
+			StringBuilder sb = new StringBuilder();
+
+			sb.append("select grouting as data ");
+			sb.append("from ag_tbw_ps  ");
+			sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+			try {
+				handler.open(Const.CONTEXT_NAME);
+				handler.setQuery(sb.toString());
+				handler.execute();
+				if (handler.next()) {
+					data = Utils.chkNull(handler.getString("data"));
+
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				handler.close();
+			}
+			return data;
+		}
+		////주상도l2
+		public static String getSrchJoosangL2(String ftridn) {
+			String data = "";
+
+			DBHandler handler = new DBHandler();
+			StringBuilder sb = new StringBuilder();
+
+			sb.append("select l2 as data ");
+			sb.append("from ag_tbw_ps  ");
+			sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+			try {
+				handler.open(Const.CONTEXT_NAME);
+				handler.setQuery(sb.toString());
+				handler.execute();
+				if (handler.next()) {
+					data = Utils.chkNull(handler.getString("data"));
+
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				handler.close();
+			}
+			return data;
+		}
+	 ////주상도l2_v
+			public static String getSrchJoosangL2_v(String ftridn) {
+				String data = "";
+
+				DBHandler handler = new DBHandler();
+				StringBuilder sb = new StringBuilder();
+
+				sb.append("select l2_v as data ");
+				sb.append("from ag_tbw_ps  ");
+				sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+				try {
+					handler.open(Const.CONTEXT_NAME);
+					handler.setQuery(sb.toString());
+					handler.execute();
+					if (handler.next()) {
+						data = Utils.chkNull(handler.getString("data"));
+
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					handler.close();
+				}
+				return data;
+			}
+		////케이싱
+			public static String getSrchJoosangCasing(String ftridn) {
+				String data = "";
+
+				DBHandler handler = new DBHandler();
+				StringBuilder sb = new StringBuilder();
+
+				sb.append("select casing as data ");
+				sb.append("from ag_tbw_ps  ");
+				sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+				try {
+					handler.open(Const.CONTEXT_NAME);
+					handler.setQuery(sb.toString());
+					handler.execute();
+					if (handler.next()) {
+						data = Utils.chkNull(handler.getString("data"));
+
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					handler.close();
+				}
+				return data;
+			}
+			
+		////주상도l3
+			public static String getSrchJoosangL3(String ftridn) {
+				String data = "";
+
+				DBHandler handler = new DBHandler();
+				StringBuilder sb = new StringBuilder();
+
+				sb.append("select l3 as data ");
+				sb.append("from ag_tbw_ps  ");
+				sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+				try {
+					handler.open(Const.CONTEXT_NAME);
+					handler.setQuery(sb.toString());
+					handler.execute();
+					if (handler.next()) {
+						data = Utils.chkNull(handler.getString("data"));
+
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					handler.close();
+				}
+				return data;
+			}
+		 ////주상도l3_v
+				public static String getSrchJoosangL3_v(String ftridn) {
+					String data = "";
+
+					DBHandler handler = new DBHandler();
+					StringBuilder sb = new StringBuilder();
+
+					sb.append("select l3_v as data ");
+					sb.append("from ag_tbw_ps  ");
+					sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+					try {
+						handler.open(Const.CONTEXT_NAME);
+						handler.setQuery(sb.toString());
+						handler.execute();
+						if (handler.next()) {
+							data = Utils.chkNull(handler.getString("data"));
+
+						}
+					} catch (Exception e) {
+						e.printStackTrace();
+					} finally {
+						handler.close();
+					}
+					return data;
+				}
+			////주상도l4
+				public static String getSrchJoosangL4(String ftridn) {
+					String data = "";
+
+					DBHandler handler = new DBHandler();
+					StringBuilder sb = new StringBuilder();
+
+					sb.append("select l4 as data ");
+					sb.append("from ag_tbw_ps  ");
+					sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+					try {
+						handler.open(Const.CONTEXT_NAME);
+						handler.setQuery(sb.toString());
+						handler.execute();
+						if (handler.next()) {
+							data = Utils.chkNull(handler.getString("data"));
+
+						}
+					} catch (Exception e) {
+						e.printStackTrace();
+					} finally {
+						handler.close();
+					}
+					return data;
+				}
+			 ////주상도l4_v
+					public static String getSrchJoosangL4_v(String ftridn) {
+						String data = "";
+
+						DBHandler handler = new DBHandler();
+						StringBuilder sb = new StringBuilder();
+
+						sb.append("select l4_v as data ");
+						sb.append("from ag_tbw_ps  ");
+						sb.append("where FTR_IDN = '" + ftridn + "' order by pnu ");
+
+						try {
+							handler.open(Const.CONTEXT_NAME);
+							handler.setQuery(sb.toString());
+							handler.execute();
+							if (handler.next()) {
+								data = Utils.chkNull(handler.getString("data"));
+
+							}
+						} catch (Exception e) {
+							e.printStackTrace();
+						} finally {
+							handler.close();
+						}
+						return data;
+					}
 }

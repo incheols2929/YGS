@@ -46,10 +46,19 @@ public class srchReservoirRecord {
 	public String bu;
 	public String jimok;
 	
+	public String juso;
 	
 	
 	
 	
+	
+	
+	public String getJuso() {
+		return juso;
+	}
+	public void setJuso(String juso) {
+		this.juso = juso;
+	}
 	public String getJimok() {
 		return jimok;
 	}

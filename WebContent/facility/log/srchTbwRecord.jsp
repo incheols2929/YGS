@@ -11,12 +11,10 @@
 	String pnu = request.getParameter("pnu");
 	String ftridn = request.getParameter("ftr_idn");
 	String user_name = request.getParameter("user_name");
-
 	String mngcde = Code.getTbwMNGPositionPrint(ftridn);
-
+    String gbn = "FTR004"; //시설물 구분 : 관정
 
 	ArrayList<srchReservoirRecord> list = Code.getSrchFacilityCONS_YMD(ftridn);
-	ArrayList<srchReservoirRecord> F_list = Code.getSrchFacilityAg_parc_dt(ftridn);
 	ArrayList<srchReservoirRecord> U_list = Code.getSrchFacilityAg_rep_dt(ftridn); //유지보수
 	ArrayList<srchReservoirRecord> Img_list = Code.getSrchFacilityImages(ftridn);
 	//ArrayList<srchReservoirRecord> joosang_list = Code.getSrchTbwL_VAL(ftridn);
@@ -31,6 +29,7 @@
 <script type="text/javascript" src="../script/jquery-1.6.2.js"></script>
 <script type="text/javascript" src="../script/jquery.layout-latest.js"></script>
 <script type="text/javascript" src="../script/jquery-ui-latest.js"></script>
+<script type="text/javascript" src="../log/js/print.js"></script>
 <style>
 @page {
 	size: landscape;
@@ -183,7 +182,8 @@ body {
 <script type="text/javascript">
 	var initBody;
 	var U_list = <%=U_list.size()%>;
-
+    var ftride = <%= ftridn %>;
+    var gbn = '<%= gbn %>';
 	
 	function beforePrint(){
 		initBody = document.body.innerHTML;
@@ -206,6 +206,10 @@ body {
 		if(U_list > 18){
 			$('#last_ment').hide();	
 		}
+		
+		LandInfoList(ftride,gbn);//필지정보를 가져온다.
+		MainTenanceList(ftride,gbn); //유지보수 정보를 가져온다.
+		InspectionInfoList(ftride,gbn); // 점검내역정보를 가져온다.
 	});
 
 </script>
@@ -402,7 +406,7 @@ body {
 	</table>
    </div>
   </div>
-  
+  <!-- 새로운 페이지 -->
   <!-- 이미지 -->
   <div class="page_layout">
 	<div class="page_ctt page_break">
@@ -431,10 +435,59 @@ body {
 	   </tr>   
 	  </table>
 	  
+	  <!-- 지질주상도이미지를 추가함 -->
+	  <table border="0" cellpadding="0" cellspacing="0" width="50%" style="float:left; margin-top:15px;">
+	    <tr>
+	 	  <td height="20"><img alt="error" src="../img/comums2.png" height="300px" width="480px" align="center"></td>
+	 	</tr>
+	  </table>
 	  
-	  
+	  <!-- 주상도 상세제원 -->
+	  <table class="joosangdo" border="0" cellpadding="0" cellspacing="0">
+	   <colgroup>
+		<col width="25%">
+		<col width="25%">
+		<col width="25%">
+		<col width="25%">
+	   </colgroup>
+   	   <tr> <!-- 지질주상도이미지를 추가함 -->
+		<th  align="center">토층</th>
+		<th  align="center">깊이</th>
+		<th  align="center">설치도</th>
+		<th  align="center">길이</th>
+	   </tr>
+	   <tr>
+		<td align="center"><%=Code.getSrchJoosangL1(ftridn)%></td>
+		<td align="center"><%=Code.getSrchJoosangL1_v(ftridn) %></td>
+		<td align="center">그라우팅</td>
+		<td align="center"><%=Code.getSrchJoosangGrouting(ftridn) %></td>
+	   </tr>
+	   <tr>
+		<td align="center"><%=Code.getSrchJoosangL2(ftridn) %></td>
+		<td align="center"><%=Code.getSrchJoosangL2_v(ftridn) %></td>
+		<td align="center">케이싱</td>
+		<td align="center"><%=Code.getSrchJoosangCasing(ftridn) %></td>
+	   </tr>
+	   <tr>
+		<td align="center"><%=Code.getSrchJoosangL3(ftridn) %></td>
+		<td align="center"><%=Code.getSrchJoosangL3_v(ftridn) %></td>
+		<td align="center"></td>
+		<td align="center"></td>
+	   </tr>
+	   <tr>
+		<td align="center"><%=Code.getSrchJoosangL4(ftridn) %></td>
+		<td align="center"><%=Code.getSrchJoosangL4_v(ftridn) %></td>
+		<td align="center"></td>
+		<td align="center"></td>
+	   </tr>  
+	  </table>
 	</div>
    </div>
+   
+
+    
+    
+    
   
  </div>
 </div>
