@@ -12,10 +12,38 @@
 	String ftridn = request.getParameter("ftr_idn");
 	String user_name = request.getParameter("user_name");
 	String mngcde = Code.getTbwMNGPositionPrint(ftridn);
-    String gbn = "FTR004"; //시설물 구분 : 관정
+   // String gbn = "FTR004"; //시설물 구분 : 관정
+    String tableName="";
+    ftridn = "468702016001036"; //테스트 코드
+    String gbn = "FTR001"; //테스트 코드
+    
+    if(!gbn.equals("")||!gbn.equals(null)){
+     if(gbn.equals("FTR001")){
+   	  tableName = "ag_reservoir_as"; //저수지
+     }else if(gbn.equals("FTR002")){
+   	  tableName = "ag_drain_ps";//배수장
+     }else if(gbn.equals("FTR003")){
+   	  tableName = "ag_pump_ps";//양수장
+     }else if(gbn.equals("FTR004")){
+   	  tableName = "ag_tbw_ps";//관정
+     }else if(gbn.equals("FTR005")){
+   	  tableName = "ag_culvert_ps";//집수암거
+     }else if(gbn.equals("FTR006")){
+   	  tableName = "";//농로
+     }else if(gbn.equals("FTR007")){
+   	  tableName = "";//집수정
+     }else if(gbn.equals("FTR008")){
+   	  tableName = "ag_seawall_ps";//방조제
+     }else if(gbn.equals("FTR009")){
+   	  tableName = "ag_cwip_as";//취입보
+     }else if(gbn.equals("FTR010")){
+   	  tableName = "ag_basin_as";//저류지
+     }
+    }
 
 	ArrayList<srchReservoirRecord> list = Code.getSrchFacilityCONS_YMD(ftridn);
 	ArrayList<srchReservoirRecord> U_list = Code.getSrchFacilityAg_rep_dt(ftridn); //유지보수
+	ArrayList<srchReservoirRecord> LandAreaList =Code.getSrchFacilityAg_parc_dt(ftridn,tableName,gbn);
 	ArrayList<srchReservoirRecord> Img_list = Code.getSrchFacilityImages(ftridn);
 	//ArrayList<srchReservoirRecord> joosang_list = Code.getSrchTbwL_VAL(ftridn);
 	//ArrayList<srchReservoirRecord> ag_cons_dt = Code.getSrchFacilityAg_Cons_dt(ftridn);
@@ -207,9 +235,9 @@ body {
 			$('#last_ment').hide();	
 		}
 		
-		LandInfoList(ftride,gbn);//필지정보를 가져온다.
-		MainTenanceList(ftride,gbn); //유지보수 정보를 가져온다.
-		InspectionInfoList(ftride,gbn); // 점검내역정보를 가져온다.
+	//	LandInfoList(ftride,gbn);//필지정보를 가져온다.
+	//	MainTenanceList(ftride,gbn); //유지보수 정보를 가져온다.
+	//	InspectionInfoList(ftride,gbn); // 점검내역정보를 가져온다.
 	});
 
 </script>
@@ -420,7 +448,7 @@ body {
 			for (int i = 0; i < Img_list.size(); i++) {
 	   %>
 	    <td class="line_border_5" width="200px" align="center" height="300px">
-		<img alt="error" src="/ygsimg/<%=Img_list.get(i).FILE_PATH%>" height="300px" width="480px" align="center"></td>
+		<img alt="error" src="/ygsimg/<%=Img_list.get(i).FILE_PATH%>" height="300px" width="480px" align="center"></td> 
 		<td  class="line_border_5" width="10">&nbsp;</td>
 	   
 	    <%
@@ -484,7 +512,57 @@ body {
 	</div>
    </div>
    
-
+  <!-- 필지정보를 가져온다. -->
+  <div class="page_layout"> 
+     <div class="page_ctt page_break" id="LandInformattionWrap"> 
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" class="line_border">
+		 <tr> 
+		  <td colspan="6" width="23%" height="45" align="center" class="line_border_right" style="font-weight:bold;">&nbsp;필지정보</td> 
+		 </tr> 
+		 <tr> 
+		  <td width="20%" height="35" align="center" class="line_border_2" style="font-weight:bold;">&nbsp;지번</td> 
+		  <td width="5%" height="35" align="center" class="line_border_2" style="font-weight:bold;">&nbsp;지목</td> 
+		  <td width="13%" height="35" align="center" class="line_border_2" style="font-weight:bold;">&nbsp;필지면적</td> 
+		  <td width="13%" height="35" align="center" class="line_border_2" style="font-weight:bold;">&nbsp;편입면적</td> 
+	      <td width="13%" height="35" align="center" class="line_border_2" style="font-weight:bold;">&nbsp;소유자</td> 
+		  <td width="13%" height="35" align="center" class="line_border_right" style="font-weight:bold;">&nbsp;기타</td> 
+	     </tr>
+	    <!-- LandAreaList -->
+	    <%
+	    if(LandAreaList.size() != 0 ){
+	     for(int i = 0; i < 17; i++){
+	    	 System.out.println("1.");
+	    %>
+	      <tr> 
+	             <td width="20%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getJuso() %></td> 
+	             <td width="6%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getJimok() %></td> 
+	             <td width="13%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getLandarea() %></td>
+	             <td width="13%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getTraarea() %></td>
+	             <td width="13%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getOwnrnm() %></td>
+	             <td width="13%" height="35" align="center" class="line_border_right">&nbsp;<%= LandAreaList.get(i).getEtc() %></td>
+	      </tr>
+        <%
+	     }
+	     for(int i = 17; i < LandAreaList.size(); i++){
+	    	 System.out.println("2.");
+	    %>
+	      <tr> 
+	             <td width="20%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getJuso() %></td> 
+	             <td width="6%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getJimok() %></td> 
+	             <td width="13%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getLandarea() %></td>
+	             <td width="13%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getTraarea() %></td>
+	             <td width="13%" height="35" align="center" class="line_border_2">&nbsp;<%= LandAreaList.get(i).getOwnrnm() %></td>
+	             <td width="13%" height="35" align="center" class="line_border_right">&nbsp;<%= LandAreaList.get(i).getEtc() %></td>
+	      </tr>
+        <%
+	     }
+	    }
+        %>
+		</table>
+	</div>
+  </div>
+	     
+	     
     
     
     

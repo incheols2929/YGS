@@ -17,12 +17,7 @@ public class srchReservoirRecord {
 	public String DET_AMT = "";
 	public String CONS_DES = "";
 	public String ETC = "";
-	
-	//필지정보
-	public String LAND_AREA;
-	public String TRA_AREA;
-	public String OWNR_NM;
-	public String F_ETC;
+
 	
 	//유지보수
 	
@@ -39,20 +34,57 @@ public class srchReservoirRecord {
 	public String IMG_NM;
 	
 	/* 빠진 bean 추가
-	 * 
+	 *  신인철 추가
 	 */
 	
 	public String bon;
 	public String bu;
 	public String jimok;
-	
 	public String juso;
 	
 	
+	//필지정보
+	public String landarea;
+	public String traarea;
+	public String ownrnm;
+	public String etc;
+    public String ftridn;
+    
 	
 	
 	
 	
+	
+	public String getFtridn() {
+		return ftridn;
+	}
+	public void setFtridn(String ftridn) {
+		this.ftridn = ftridn;
+	}
+	public String getLandarea() {
+		return landarea;
+	}
+	public void setLandarea(String landarea) {
+		this.landarea = landarea;
+	}
+	public String getTraarea() {
+		return traarea;
+	}
+	public void setTraarea(String traarea) {
+		this.traarea = traarea;
+	}
+	public String getOwnrnm() {
+		return ownrnm;
+	}
+	public void setOwnrnm(String ownrnm) {
+		this.ownrnm = ownrnm;
+	}
+	public String getEtc() {
+		return etc;
+	}
+	public void setEtc(String etc) {
+		this.etc = etc;
+	}
 	public String getJuso() {
 		return juso;
 	}
@@ -128,33 +160,6 @@ public class srchReservoirRecord {
 		U_ETC = u_ETC;	
 	}
 	
-	//필지정보
-	public String getLAND_AREA() {
-		return LAND_AREA;
-	}
-	
-
-	public void setLAND_AREA(String lAND_AREA) {
-		LAND_AREA = lAND_AREA;
-	}
-	public String getTRA_AREA() {
-		return TRA_AREA;
-	}
-	public void setTRA_AREA(String tRA_AREA) {
-		TRA_AREA = tRA_AREA;
-	}
-	public String getOWNR_NM() {
-		return OWNR_NM;
-	}
-	public void setOWNR_NM(String oWNR_NM) {
-		OWNR_NM = oWNR_NM;
-	}
-	public String getF_ETC() {
-		return F_ETC;
-	}
-	public void setF_ETC(String f_ETC) {
-		F_ETC = f_ETC;
-	}
 	
 	
 	

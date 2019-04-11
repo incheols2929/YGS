@@ -156,6 +156,49 @@ public class ConditionSearch {
     public String bas_area="";
     public String etc = "";
     public String ftr_gbn = "";
+    
+    
+    //필지정보
+    
+	public String landarea;
+	public String traarea;
+	public String ownrnm;
+	public String getLandarea() {
+		return landarea;
+	}
+
+	public void setLandarea(String landarea) {
+		this.landarea = landarea;
+	}
+
+	public String getTraarea() {
+		return traarea;
+	}
+
+	public void setTraarea(String traarea) {
+		this.traarea = traarea;
+	}
+
+	public String getOwnrnm() {
+		return ownrnm;
+	}
+
+	public void setOwnrnm(String ownrnm) {
+		this.ownrnm = ownrnm;
+	}
+
+	public String getJimok() {
+		return jimok;
+	}
+
+	public void setJimok(String jimok) {
+		this.jimok = jimok;
+	}
+
+	public String jimok;
+    
+    
+    
     public String getFtr_gbn() {
 		return ftr_gbn;
 	}

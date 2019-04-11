@@ -3912,11 +3912,13 @@ public class Code {
 		DBHandler handler = new DBHandler();
 		StringBuilder sb = new StringBuilder();
 
-		sb.append(" select t1.land_area,t1.tra_area,t1.ownr_nm,t1.jimok,t1.etc,t2.juso ");
+		sb.append(" select t1.ftr_idn,t1.land_area,t1.tra_area,t1.ownr_nm,t1.jimok,t1.etc,t2.juso ");
 		sb.append(" from ag_parc_dt t1 ");
 		sb.append(" left join "+tableName+" t2 on t1.ftr_idn = t2.ftr_idn ");
 		sb.append(" where t1.ftr_cde = '"+gbn+"' ");
 		sb.append(" and t1.ftr_idn = '"+ftridn+"' ");
+		//System.out.println(" >> : "+sb.toString());
+		//쿼리 검색결과 확인해야함
 		try {
 			handler.open(Const.CONTEXT_NAME);
 			handler.setQuery(sb.toString());
@@ -3924,11 +3926,12 @@ public class Code {
 
 			while (handler.next()) {
 				srchReservoirRecord sfr = new srchReservoirRecord();
-				sfr.LAND_AREA = Utils.chkNull(handler.getString("land_area"));
-				sfr.TRA_AREA = Utils.chkNull(handler.getString("tra_area"));
-				sfr.OWNR_NM = Utils.chkNull(handler.getString("ownr_nm"));
+				sfr.ftridn = Utils.chkNull(handler.getString("ftr_idn"));
+				sfr.landarea = Utils.chkNull(handler.getString("land_area"));
+				sfr.traarea = Utils.chkNull(handler.getString("tra_area"));
+				sfr.ownrnm = Utils.chkNull(handler.getString("ownr_nm"));
 				sfr.jimok = Utils.chkNull(handler.getString("jimok"));
-				sfr.ETC = Utils.chkNull(handler.getString("etc"));
+				sfr.etc = Utils.chkNull(handler.getString("etc"));
 				sfr.juso = Utils.chkNull(handler.getString("juso"));
 				list.add(sfr);
 			}

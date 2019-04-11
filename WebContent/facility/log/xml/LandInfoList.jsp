@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<%@page contentType="text/xml" pageEncoding="UTF-8"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="java.util.List" %>    
+<%@ page language="java" contentType="application/json; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
-<%@ page import = "java.io.*" %>
-<%@ page import="java.net.URLDecoder"%>
+<%@ page import="java.io.*"%>
+<%@ page import="java.io.BufferedReader"%>
+<%@ page import="java.io.InputStreamReader"%>
+<%@ page import="java.io.StringReader"%>
+<%@ page import="java.net.URL"%>
+<%@ page import="java.net.URLConnection"%>
+
+<%@ page import="java.awt.Image"%>
+<%@ page import="java.awt.image.BufferedImage"%>
+<%@ page import="java.io.File"%>
+<%@ page import="java.io.IOException"%>
+<%@ page import="javax.imageio.ImageIO"%>
 <%@page import="geomex.svc.handler.Code"%>
 <%@page import="geomex.pkg.srch.srchReservoirRecord"%>
+<%@ page import="geomex.pkg.srch.ConditionSearch"%>
+<%@ page import="geomex.pkg.srch.ConditionSearchBean"%>
+<%@ page import="org.apache.commons.lang3.StringUtils"%>
+<%@ page import="org.codehaus.jettison.json.*"%>
 <%
   request.setCharacterEncoding("UTF-8");
   String ftride  = request.getParameter("ftride");
@@ -36,20 +47,42 @@
   }
  }
   
+  ArrayList<srchReservoirRecord> list =Code.getSrchFacilityAg_parc_dt(ftride,tableName,gbn);  
+  String landarea = "";
+  String traarea = "";
+  String ownrnm = "";
+  String jimok = "";
+  String juso = "";
+  String etc = "";
   
-  ArrayList<srchReservoirRecord> list = Code.getSrchFacilityAg_parc_dt(ftride,tableName,gbn);
-%>
-<list>
+  %>
+ <data>
  <%
-  for(int i=0;i<list.size();i++){
- %>
-  <landarea><%= list.get(i).getLAND_AREA() %></landarea>
-  <traarea><%= list.get(i).getTRA_AREA() %></<traarea>>
-  <ownrnm><%= list.get(i).getOWNR_NM() %></ownrnm>
-  <jimok><%= list.get(i).getJimok() %></jimok>
-  <etc><%= list.get(i).getETC() %></etc>
-  <juso><%= list.get(i).getJuso() %></juso>
- <%
+  for(int i=0; i<list.size(); i++){
+	  landarea = list.get(i).getLandarea();
+	  traarea= list.get(i).getTraarea();
+	  ownrnm = list.get(i).getOwnrnm();
+	  jimok = list.get(i).getJimok();
+	  juso = list.get(i).getJuso();
+	  etc = list.get(i).getEtc();
+	  %> 
+	  <list>
+	    <landarea><%= landarea %></landarea>
+	    <traarea><%= traarea %></traarea>
+	    <ownrnm><%= ownrnm %></ownrnm>
+	    <jimok><%= jimok %></jimok>
+	    <juso><%= juso %></juso>
+	    <etc><%= etc %></etc>
+	  </list>
+	  <%
   }
  %>
-<list>
+ </data>
+ 
+
+
+
+
+
+
+
